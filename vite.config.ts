@@ -15,10 +15,13 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     analog({
       nitro: {
+        externals: {
+          external: [],
+        },
         preset: 'netlify',
         output: {
           serverDir: '/.netlify/functions-internal',
-          publicDir: 'dist',
+          publicDir: '../../output',
         },
       },
     }),
