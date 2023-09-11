@@ -20,7 +20,7 @@ export default defineConfig(({ mode }) => ({
         },
         preset: 'netlify',
         output: {
-          serverDir: '/.netlify/functions-internal',
+          serverDir: `{{ rootDir }}/.netlify/functions-internal`,
           publicDir: '../../output',
         },
       },
