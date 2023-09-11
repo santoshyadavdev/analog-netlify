@@ -21,7 +21,7 @@ export default defineConfig(({ mode }) => ({
         preset: 'netlify',
         output: {
           serverDir: '{{ rootDir }}/.netlify/functions-internal',
-          publicDir: '../../output',
+          publicDir: '../../dist/analog/public',
         },
       },
     }),
